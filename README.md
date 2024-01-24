@@ -19,4 +19,4 @@ UniQuely is an e-commerce student platform made by a current undergraduate at Dr
 
 **Server:** Node, Express, MyQL
 
-**Other:** Vite, GraphQL
+**Other:** Vite, GraphQL, dasiyUI
