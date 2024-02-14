@@ -7,7 +7,7 @@
       <div class="max-w-md">
         <h1 class="mb-5 text-5xl font-bold">UniQuely Yours</h1>
         <p class="mb-5">Where Sustainability Meets Style, Making a Difference on Campus!"</p>
-        <button id="getStartedBtn" class="btn">Get Started</button>
+        <button id="getStartedBtn" class="btn"><a href="/home">Get Started</a></button>
       </div>
     </div>
 </div>
@@ -104,15 +104,10 @@
       </div>
     </div>
     <div>
-
-        
-    </div>
-   
-  </div>
+</div>
+</div>
 
   
-
-
   
 
 <style>
