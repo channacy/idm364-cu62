@@ -1,7 +1,7 @@
 <script></script>
 <div class="nav-bar">
 	<div class="nav-bar-left">
-		<h1 class="text-3xl font-bold">🫧 UniQuely</h1>
+		<h1 class="text-3xl font-bold">🎨 UniQuely</h1>
 	</div>
 	<div class="nav-bar-right">
 		<ul>
@@ -11,6 +11,7 @@
 	</div>
 </div>
 <style>
+
 .nav-bar {
 	display: flex;
 	justify-content: space-between;
