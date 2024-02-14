@@ -1,6 +1,6 @@
 <div class="navbar bg-base-100">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl">🎨 UniQuely</a>
+      <a href="/home" class="btn btn-ghost text-xl">🎨 UniQuely</a>
     </div>
     <div class="flex-none">
       <div class="dropdown dropdown-end">
@@ -15,7 +15,7 @@
             <span class="font-bold text-lg">8 Items</span>
             <span style="color: black" class="text-info">Subtotal: $999</span>
             <div class="card-actions">
-              <button style="background-color: #48639C; color: white" class="btn btn-block">View cart</button>
+              <button style="background-color: #48639C; color: white" class="btn btn-block" onclick="window.location.href='/cart'">View cart</button>
             </div>
           </div>
         </div>
