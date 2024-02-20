@@ -29,10 +29,5 @@
    justify-content: center;
    align-items: center;
 }
-input{
-    background-color: #48639C;
-}
-input:focus{
-    background-color: #EAEBED;
-}
+
 </style>

@@ -6,7 +6,7 @@
   
   <html data-theme="cupcake" lang="sass">
     <Header/>
-    <h1>Cart</h1>
+    <h1 id="cart-title">My Cart</h1>
     <main>
         <div class="cart-table overflow-x-auto">
             <table class="table">
@@ -14,8 +14,8 @@
               <thead>
                 <tr>
                   <th>Name</th>
-                  <th>Job</th>
-                  <th>Favorite Color</th>
+                  <th>Product</th>
+                  <th>Price</th>
                   <th></th>
                 </tr>
               </thead>
@@ -31,14 +31,14 @@
                       </div>
                       <div>
                         <div class="font-bold">Hart Hagerty</div>
-                        <div class="text-sm opacity-50">United States</div>
+                        <div class="text-sm opacity-50">Drexel University</div>
                       </div>
                     </div>
                   </td>
                   <td>
-                    Zemlak, Daniel and Leannon
+                    Denmin Pants
                     <br/>
-                    <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
+                    <span class="badge badge-ghost badge-sm">Clothes</span>
                   </td>
                   <td>Purple</td>
                   <th>
@@ -56,14 +56,14 @@
                       </div>
                       <div>
                         <div class="font-bold">Brice Swyre</div>
-                        <div class="text-sm opacity-50">China</div>
+                        <div class="text-sm opacity-50">Drexel University</div>
                       </div>
                     </div>
                   </td>
                   <td>
-                    Carroll Group
+                    Denim Jacket
                     <br/>
-                    <span class="badge badge-ghost badge-sm">Tax Accountant</span>
+                    <span class="badge badge-ghost badge-sm">Clothes</span>
                   </td>
                   <td>Red</td>
                   <th>
@@ -81,16 +81,16 @@
                       </div>
                       <div>
                         <div class="font-bold">Marjy Ferencz</div>
-                        <div class="text-sm opacity-50">Russia</div>
+                        <div class="text-sm opacity-50">Drexel University</div>
                       </div>
                     </div>
                   </td>
                   <td>
-                    Rowe-Schoen
+                    Pencils
                     <br/>
-                    <span class="badge badge-ghost badge-sm">Office Assistant I</span>
+                    <span class="badge badge-ghost badge-sm">Office Supply</span>
                   </td>
-                  <td>Crimson</td>
+                  <td>$5</td>
                   <th>
                     <button class="btn btn-ghost btn-xs">details</button>
                   </th>
@@ -106,16 +106,16 @@
                       </div>
                       <div>
                         <div class="font-bold">Yancy Tear</div>
-                        <div class="text-sm opacity-50">Brazil</div>
+                        <div class="text-sm opacity-50">Drexel University</div>
                       </div>
                     </div>
                   </td>
                   <td>
-                    Wyman-Ledner
+                    Custom Tote Bag
                     <br/>
-                    <span class="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+                    <span class="badge badge-ghost badge-sm">Handmade</span>
                   </td>
-                  <td>Indigo</td>
+                  <td>$10</td>
                   <th>
                     <button class="btn btn-ghost btn-xs">details</button>
                   </th>
@@ -138,16 +138,20 @@
     </main>
   
 <style lang="postcss">
-    :global(html) {
-        background-color: theme(colors.green.100);
-    }
+  :global(html) {
+      background-color: theme(colors.green.100);
+  }
 
-    .cart-table{
-        display: flex;
-        margin: 10px;
-        padding: 4px;
-    }
-    
+  .cart-table{
+      display: flex;
+      margin: 10px;
+      padding: 4px;
+  }
+
+  #cart-title{
+    font-size: 24px;
+    margin-left: 5px;
+  }
 </style>
   
   </html>
