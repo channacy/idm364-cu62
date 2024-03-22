@@ -1,0 +1,195 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "imports": [
+      "_internal.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/server/internal.js"
+  },
+  "_Footer.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/Footer.bALIHz_q.css",
+    "src": "_Footer.svelte_svelte_type_style_lang.js"
+  },
+  "_Header.js": {
+    "file": "chunks/Header.js",
+    "imports": [
+      "_ssr.js",
+      "_store.js"
+    ]
+  },
+  "_TabBar.svelte_svelte_type_style_lang.js": {
+    "file": "_app/immutable/assets/TabBar.i0OHNBjU.css",
+    "src": "_TabBar.svelte_svelte_type_style_lang.js"
+  },
+  "_client.js": {
+    "file": "chunks/client.js",
+    "imports": [
+      "_exports.js"
+    ]
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js"
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js"
+  },
+  "_store.js": {
+    "file": "chunks/store.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_supabaseClient.js": {
+    "file": "chunks/supabaseClient.js"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_client.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "imports": [
+      "_internal.js",
+      "_exports.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
+  },
+  "src/routes/+layout.svelte": {
+    "css": [
+      "_app/immutable/assets/_layout.Y___amcb.css"
+    ],
+    "file": "entries/pages/_layout.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.uGtreflW.css",
+      "_app/immutable/assets/Footer.bALIHz_q.css"
+    ],
+    "file": "entries/pages/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+page.svelte"
+  },
+  "src/routes/cart/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/Footer.bALIHz_q.css",
+      "_app/immutable/assets/TabBar.i0OHNBjU.css"
+    ],
+    "file": "entries/pages/cart/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Header.js",
+      "_store.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/cart/+page.svelte"
+  },
+  "src/routes/home/+layout.svelte": {
+    "css": [
+      "_app/immutable/assets/Footer.bALIHz_q.css",
+      "_app/immutable/assets/TabBar.i0OHNBjU.css"
+    ],
+    "file": "entries/pages/home/_layout.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Header.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/home/+layout.svelte"
+  },
+  "src/routes/home/+page.server.ts": {
+    "file": "entries/pages/home/_page.server.ts.js",
+    "imports": [
+      "_supabaseClient.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/home/+page.server.ts"
+  },
+  "src/routes/home/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page._jDRjf7a.css"
+    ],
+    "file": "entries/pages/home/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_client.js",
+      "_store.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/home/+page.svelte"
+  },
+  "src/routes/products/+layout.svelte": {
+    "css": [
+      "_app/immutable/assets/Footer.bALIHz_q.css"
+    ],
+    "file": "entries/pages/products/_layout.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Header.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/+layout.svelte"
+  },
+  "src/routes/products/[slug]/+page.server.ts": {
+    "file": "entries/pages/products/_slug_/_page.server.ts.js",
+    "imports": [
+      "_supabaseClient.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/[slug]/+page.server.ts"
+  },
+  "src/routes/products/[slug]/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.1wz_XRot.css"
+    ],
+    "file": "entries/pages/products/_slug_/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/[slug]/+page.svelte"
+  },
+  "src/routes/products/all/+page.server.ts": {
+    "file": "entries/pages/products/all/_page.server.ts.js",
+    "imports": [
+      "_supabaseClient.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/all/+page.server.ts"
+  },
+  "src/routes/products/all/+page.svelte": {
+    "file": "entries/pages/products/all/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/all/+page.svelte"
+  }
+}
