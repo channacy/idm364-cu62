@@ -25,7 +25,7 @@ import { products } from '$lib/data';
 import { supabase } from "$lib/supabaseClient";
 
 export async function load({params}) {
-  const { data } = await supabase.from("items").select().eq('id', params.slug);
+  const { data } = await supabase.from("items").select();
   console.log(data)
   return {
     item: data ?? [],

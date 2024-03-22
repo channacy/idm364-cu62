@@ -28,6 +28,7 @@
   "description": "Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).",
   "main": "postcss.config.js",
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.8",
     "acorn": "^8.11.3",
     "ansi-regex": "^6.0.1",
     "ansi-styles": "^6.2.1",

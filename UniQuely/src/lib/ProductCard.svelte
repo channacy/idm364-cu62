@@ -1,19 +1,26 @@
 
 <script lang="ts">
     import { onNavigate } from "$app/navigation";
+    import { cart } from '$lib/store';
 
-    export let ID:String;
-    export let name:String;
-    export let sellerName:String;
-    export let condition: String;
-    export let categoryOne: String;
-    export let categoryTwo: String;
+    export let ID:string;
+    export let name:string;
+    export let sellerName:string;
+    export let condition: string;
+    export let categoryOne: string;
+    export let categoryTwo: string;
     export let price:number;
-    export let imageUrl: String;
+    export let imageUrl: string;
+
+    function handle_click(){
+      cart.update(existingValue => ([...existingValue, {ID, name, sellerName, price, categoryOne}]));
+      console.log($cart);
+    }
+
 </script>
 
 <div class="card w-96 bg-base-100 shadow-xl">
-   <figure><img src={imageUrl} alt="Product Image" /></figure>
+   <figure><img src={imageUrl} alt="Product" /></figure>
     <div class="card-body">
         <h2 class="card-title">
         <a href="/products/{ID}">{name}</a>
@@ -28,7 +35,7 @@
         <p>$ {price}</p>
       </div>
       <div class="card-actions justify-end">
-        <button class="btn btn-primary buy-now-btn"><a href="/cart">Buy Now</a></button>
+        <button class="btn btn-primary buy-now-btn" on:click={handle_click}>Add to Cart</button>
       </div>
     </div>
   </div>

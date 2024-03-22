@@ -1,12 +1,25 @@
-<script>
+<script lang="ts">
     import Header from "$lib/Header.svelte";
     import Footer from "$lib/Footer.svelte";
     import TabBar from "$lib/TabBar.svelte";
+    import { cart } from '$lib/store';
+    let itemsNum = $cart.length;
+
+    let totalPrice: number = calculateTotalPrice();
+
+    function calculateTotalPrice(){
+      let total = 0
+      $cart.forEach(item => {
+        total += item.price;
+    });
+        return total;
+      }
+
   </script>
   
-  <html data-theme="cupcake" lang="sass">
+  <html data-theme="cupcake" lang="sass" class="container">
     <Header/>
-    <h1 id="cart-title">My Cart</h1>
+    <h1 id="cart-title">Order Summary</h1>
     <main>
         <div class="cart-table overflow-x-auto">
             <table class="table">
@@ -20,121 +33,41 @@
                 </tr>
               </thead>
               <tbody>
-                <!-- row 1 -->
+                {#each $cart as item}
                 <tr>
                   <td>
                     <div class="flex items-center gap-3">
-                      <div class="avatar">
-                        <div class="mask mask-squircle w-12 h-12">
-                          <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" />
-                        </div>
-                      </div>
+                
                       <div>
-                        <div class="font-bold">Hart Hagerty</div>
-                        <div class="text-sm opacity-50">Drexel University</div>
+                        <div class="font-bold">{item.sellerName}</div>
                       </div>
                     </div>
                   </td>
                   <td>
-                    Denmin Pants
+                    {item.name}
                     <br/>
-                    <span class="badge badge-ghost badge-sm">Clothes</span>
+                    <span class="badge badge-ghost badge-sm">{item.categoryOne}</span>
                   </td>
-                  <td>Purple</td>
+                  <td>${item.price}</td>
                   <th>
-                    <button class="btn btn-ghost btn-xs">details</button>
+                    <button class="btn btn-ghost btn-xs"> <a href="/products/{item.ID}">More Details</a></button>
                   </th>
                 </tr>
-                <!-- row 2 -->
-                <tr>
-                  <td>
-                    <div class="flex items-center gap-3">
-                      <div class="avatar">
-                        <div class="mask mask-squircle w-12 h-12">
-                          <img src="/tailwind-css-component-profile-3@56w.png" alt="Avatar Tailwind CSS Component" />
-                        </div>
-                      </div>
-                      <div>
-                        <div class="font-bold">Brice Swyre</div>
-                        <div class="text-sm opacity-50">Drexel University</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    Denim Jacket
-                    <br/>
-                    <span class="badge badge-ghost badge-sm">Clothes</span>
-                  </td>
-                  <td>Red</td>
-                  <th>
-                    <button class="btn btn-ghost btn-xs">details</button>
-                  </th>
-                </tr>
-                <!-- row 3 -->
-                <tr>
-                  <td>
-                    <div class="flex items-center gap-3">
-                      <div class="avatar">
-                        <div class="mask mask-squircle w-12 h-12">
-                          <img src="/tailwind-css-component-profile-4@56w.png" alt="Avatar Tailwind CSS Component" />
-                        </div>
-                      </div>
-                      <div>
-                        <div class="font-bold">Marjy Ferencz</div>
-                        <div class="text-sm opacity-50">Drexel University</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    Pencils
-                    <br/>
-                    <span class="badge badge-ghost badge-sm">Office Supply</span>
-                  </td>
-                  <td>$5</td>
-                  <th>
-                    <button class="btn btn-ghost btn-xs">details</button>
-                  </th>
-                </tr>
-                <!-- row 4 -->
-                <tr>
-                  <td>
-                    <div class="flex items-center gap-3">
-                      <div class="avatar">
-                        <div class="mask mask-squircle w-12 h-12">
-                          <img src="/tailwind-css-component-profile-5@56w.png" alt="Avatar Tailwind CSS Component" />
-                        </div>
-                      </div>
-                      <div>
-                        <div class="font-bold">Yancy Tear</div>
-                        <div class="text-sm opacity-50">Drexel University</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    Custom Tote Bag
-                    <br/>
-                    <span class="badge badge-ghost badge-sm">Handmade</span>
-                  </td>
-                  <td>$10</td>
-                  <th>
-                    <button class="btn btn-ghost btn-xs">details</button>
-                  </th>
-                </tr>
+                {/each}
               </tbody>
-              <!-- foot -->
               <tfoot>
                 <tr>
                   <th></th>
-                  <th>4 Items</th>
-                  <th>Total: $999</th>
-                  <th>Items nonrefunable</th>
+                  <th>{itemsNum} Items</th>
+                  <th>Total: ${totalPrice.toFixed(2)}</th>
+                  <th>Items are nonrefunable</th>
                   <th></th>
                 </tr>
               </tfoot>
               
             </table>
           </div>
-          <button class="btn-checkout btn btn-warning btn-md">Checkout</button>
+          <!-- <button class="btn-checkout btn btn-warning btn-md">Checkout</button> -->
     </main>
   
 <style lang="postcss">
@@ -150,7 +83,7 @@
 
   #cart-title{
     font-size: 24px;
-    margin-left: 5px;
+    margin-left: 20px;
   }
 </style>
   
