@@ -9,14 +9,10 @@ UniQuely is an e-commerce student platform made by a current undergraduate at Dr
 - A route for individual item details
 - An order summary route. Order details can be maintained via app state and local storage.
 - An API route that returns a raw JSON object containing all of the products available in your project.
-- An administrative form that controls the product details. The form should update the backend service, which then updates the frontend.
-- User accounts/authentication for persisting orders.
 
 
 ## 🛠️ Tech Stack
 
-**Client:** Svelte
+**Client:** Svelte, SvelteKit
 
-**Server:** Node, Express, MySQL
-
-**Other:** Vite, GraphQL, daisyUI
+**Other:** Vite, daisyUI, Supabase
