@@ -14,7 +14,7 @@
 
     function handle_click(){
       cart.update(existingValue => ([...existingValue, {ID, name, sellerName, price, categoryOne}]));
-      console.log($cart);
+      alert("Item added to cart!");
     }
 
 </script>

@@ -13,8 +13,8 @@ import { slugify } from '$lib/utils.js';
 import { supabase } from "$lib/supabaseClient";
 
 export async function load({params}) {
-  const { data } = await supabase.from("items").select().eq('id', params.slug);
+  const { data } = await supabase.from("items").select().eq('categoryOne', params.slug);
   return {
-    item: data ?? [],
+    items: data ?? [],
   };
 }

@@ -2,7 +2,6 @@
     import { cart } from '$lib/store';
     let itemsNum = $cart.length;
     let totalPrice: number = calculateTotalPrice();
-
     function calculateTotalPrice(){
       let total = 0
       $cart.forEach(item => {
@@ -11,7 +10,6 @@
         return total;
       }
 </script>
-
 
 <div class="navbar bg-base-100">
     <div class="flex-1">
@@ -42,14 +40,14 @@
           </div>
         </div>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li>
+          <!-- <li>
             <a class="justify-between">
               Profile
               <span class="badge">New</span>
             </a>
           </li>
-          <li><a>Settings</a></li>
-          <li><a>Logout</a></li>
+          <li><a>Settings</a></li> -->
+          <li><a href="/">Logout</a></li>
         </ul>
       </div>
     </div>

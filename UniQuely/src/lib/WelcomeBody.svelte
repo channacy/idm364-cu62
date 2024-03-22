@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <div class="first-section hero min-h-screen" style="background-image: url(https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content">
@@ -10,8 +7,7 @@
         <button id="getStartedBtn" class="btn"><a href="/home">Get Started</a></button>
       </div>
     </div>
-</div>
-
+  </div>
 <div class="second-section hero min-h-screen bg-base-200">
     <div class="hero-content text-center">
       <div class="max-w-md">
@@ -106,9 +102,6 @@
     <div>
 </div>
 </div>
-
-  
-  
 
 <style>
 #getStartedBtn{

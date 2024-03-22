@@ -5,8 +5,8 @@
 	</div>
 	<div class="nav-bar-right">
 		<ul>
-			<li><a class="underline" href="/">Sign Up</a></li>
-			<li><a href="/"><button style="width: 100px" class="btn btn-warning btn-md">Login</button></a></li>
+			<li><a class="underline" href="/home">Sign Up</a></li>
+			<li><a href="/home"><button style="width: 100px" class="btn btn-warning btn-md">Login</button></a></li>
 		</ul>
 	</div>
 </div>

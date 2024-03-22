@@ -13,9 +13,9 @@
 
 <style>
 footer{
-  margin-top: 0; /* take available whitespace */
-  margin-bottom: -10px;      /* remove bottom whitespace */
+  margin-top: 0; 
+  margin-bottom: -10px;      
   padding-bottom: 5px;
-  height: 80px;            /* calc height when limited content */
+  height: 80px;     
 }
 </style>

@@ -1,5 +1,15 @@
 <script lang="ts">
   export let data;
+  import { cart } from '$lib/store';
+  let ID:string = data.item[0].ID;
+  let name:string = data.item[0].name;
+  let sellerName:string = data.item[0].postedBy;
+  let price:number = data.item[0].price;
+  let categoryOne:string = data.item[0].categoryOne;
+
+  function handle_click(){
+      cart.update(existingValue => ([...existingValue, {ID, name, sellerName, price, categoryOne}]));
+    }
 </script>
 
 <div class="container">
@@ -26,7 +36,7 @@
     <br/>
     <div class="item-details-footer">
       <h3>${data.item[0].price}</h3>
-      <button class="btn btn-primary buy-now-btn"><a href="/cart">Add to Cart</a></button>
+      <button class="btn btn-primary buy-now-btn" on:click={handle_click}><a href="/cart">Add to Cart</a></button>
     </div>
   </div>
 </div>
