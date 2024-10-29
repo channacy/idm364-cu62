@@ -4,7 +4,7 @@ UniQuely is an e-commerce student platform made by a current undergraduate at Dr
 
 <img width="1385" alt="Screenshot 2024-10-29 at 1 55 09 PM" src="https://github.com/user-attachments/assets/48791b65-06db-4379-b2df-d4bb6b13fcaf">
 
-Note: items not yet added available to database
+Note: Supabase pauses projects if database is not called once every 7 days, so this screen currently has no items
 <img width="1366" alt="Screenshot 2024-10-29 at 1 55 37 PM" src="https://github.com/user-attachments/assets/01ef324c-73d7-468e-864a-1874b39be1ea">
 
 ## Features
