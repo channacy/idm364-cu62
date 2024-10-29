@@ -3,6 +3,8 @@
 UniQuely is an e-commerce student platform made by a current undergraduate at Drexel University. Its purpose is to serve as an online friendly exchange for universitiy communities to share, trade, and sell sustainable items like unused furniture and handmade good for the purpose of fostering a closer and more diverisifed envirionment for your local college. 
 
 <img width="1385" alt="Screenshot 2024-10-29 at 1 55 09 PM" src="https://github.com/user-attachments/assets/48791b65-06db-4379-b2df-d4bb6b13fcaf">
+
+Note: items not yet added available to database
 <img width="1366" alt="Screenshot 2024-10-29 at 1 55 37 PM" src="https://github.com/user-attachments/assets/01ef324c-73d7-468e-864a-1874b39be1ea">
 
 ## Features
